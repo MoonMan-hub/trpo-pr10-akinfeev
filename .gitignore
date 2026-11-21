@@ -1,0 +1,17 @@
+# файлы редакторов
+.idea/
+.vscode/
+*.swp
+
+# системные файлы
+.DS_Store
+Thumbs.db
+
+# зависимости и логи (если появятся позже)
+vendor/
+node_modules/
+*.log
+
+# заказы, созданные при проверке (учебное хранилище)
+data/orders.json
+data/orders.json.tmp

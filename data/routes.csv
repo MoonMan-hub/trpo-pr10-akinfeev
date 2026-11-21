@@ -1,0 +1,13 @@
+﻿method;path;controller;action
+GET;/;HomeController;index
+GET;/catalog;CatalogController;index
+GET;/about;HomeController;about
+GET;/missing;ErrorController;notFound
+GET;/product;CatalogController;show
+GET;/check;CatalogController;check
+GET;/cart;CartController;index
+POST;/cart/add;CartController;add
+GET;/checkout;CheckoutController;form
+POST;/checkout;CheckoutController;submit
+GET;/checkout/success;CheckoutController;success
+GET;/check/orders;OrderCheckController;check

@@ -1,0 +1,53 @@
+[
+  {
+    "case": "empty",
+    "input": {},
+    "valid": false
+  },
+  {
+    "case": "bad_email",
+    "input": {
+      "name": "Иван",
+      "email": "bad",
+      "delivery": "courier"
+    },
+    "valid": false
+  },
+  {
+    "case": "ok",
+    "input": {
+      "name": "Иван",
+      "email": "ivan@example.test",
+      "delivery": "pickup"
+    },
+    "valid": true
+  },
+  {
+    "case": "unknown_delivery",
+    "input": {
+      "name": "Иван",
+      "email": "ivan@example.test",
+      "delivery": "drone"
+    },
+    "valid": false
+  },
+  {
+    "case": "courier_without_address",
+    "input": {
+      "name": "Иван",
+      "email": "ivan@example.test",
+      "delivery": "courier"
+    },
+    "valid": false
+  },
+  {
+    "case": "courier_with_address",
+    "input": {
+      "name": "Иван",
+      "email": "ivan@example.test",
+      "delivery": "courier",
+      "address": "Москва, ул. Тестовая, 1"
+    },
+    "valid": true
+  }
+]
